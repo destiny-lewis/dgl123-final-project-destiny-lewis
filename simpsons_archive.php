@@ -49,42 +49,42 @@ simpsons_archive.php
                                             <label for="homer">
                                                 Homer Simpson
                                             </label>
-                                            <input id="homer" type="checkbox" name='characters[]' value="homer">                                
+                                            <input id="homer" type="checkbox" name='characters[]' value="Homer Simpson">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="marge">
                                                 Marge Simpson                                                
                                             </label>
-                                            <input id="marge" type="checkbox" name='characters[]' value="marge">                                
+                                            <input id="marge" type="checkbox" name='characters[]' value="Marge Simpson">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="bart">
                                                 Bart Simpson                                                
                                             </label>
-                                            <input id="bart" type="checkbox" name='characters[]' value="bart">                                
+                                            <input id="bart" type="checkbox" name='characters[]' value="Bart Simpson">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="lisa">
                                                 Lisa Simpson                                                
                                             </label>
-                                            <input id="lisa" type="checkbox" name='characters[]' value="lisa">        
+                                            <input id="lisa" type="checkbox" name='characters[]' value="Lisa Simpson">        
                                         </li>
 
                                         <li class="form__item">
                                             <label for="maggie">
                                                 Maggie Simpson                                                
                                             </label>
-                                            <input id="maggie" type="checkbox" name='characters[]' value="maggie">                                
+                                            <input id="maggie" type="checkbox" name='characters[]' value="Maggie Simpson">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="moe">
                                                 Moe Szyslak                                                
                                             </label>
-                                            <input id="moe" type="checkbox" name='characters[]' value="moe">                                
+                                            <input id="moe" type="checkbox" name='characters[]' value="Moe Szyslak">                                
                                         </li>
                                     </ul>
 
@@ -97,35 +97,10 @@ simpsons_archive.php
                         </div>
                     </div>
                 </div>
-                <?php include "backend.php" ?>
                 <div class="characters__container layout-container">
                     <div class="characters__row layout-row">
                         <ul class="characters__items">
-                            <li class="characters__itemContainer">
-                                <div class="characters__item">
-                                    <img src="images/marge.png" alt="marge" class="characters__image">
-                                    <div class="characters__info">
-
-                                        <h3 class="characters__name">
-                                            Marge Simpson
-                                        </h3>
-
-                                        <div class="characters__age characters__attribute">
-                                            <b>Age:</b> 40                                                
-                                        </div>
-
-                                        <div class="characters__occupation characters__attribute">
-                                            <b>Occupation:</b> Housewife                                                    
-                                        </div>                                                    
-                                                
-                                        <div class="characters__voicedBy characters__attribute">
-                                            <b>Voiced by:</b> Julie Kavner                                                    
-                                        </div>                                                    
-                                                
-                                    </div>
-
-                                </div>
-                            </li>
+                            <?php include "backend.php" ?>
                         </ul>
                     </div>
                 </div>
