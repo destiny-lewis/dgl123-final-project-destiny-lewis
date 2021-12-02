@@ -1,0 +1,94 @@
+/******************************************* 
+Author: Destiny Lewis
+Course: DGL-123, Introduction to PHP
+Section: DLU-1
+Date: December 2nd 2021
+Final Course Project
+
+styles.css 
+*******************************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: block;
+}
+
+.site-header {
+    margin-bottom: 50px;
+}
+
+.site-header__logo {
+    width: 140px;
+}
+
+.layout-container {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.layout-row {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__itemsContainer {
+    box-shadow: 2px 4px rgb(0 0 0 / 10%);
+    margin-bottom: 50px;
+}
+
+.form__image {
+    display: block;
+    width: 100%;
+}
+
+.form__card {
+    padding: 4%;
+}
+
+.form__item {
+    margin-bottom: 0.5rem;
+}
+
+.form__button {
+    margin-top: 0.5rem;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.characters__itemContainer {
+    box-shadow: 2px 4px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 50px;
+}
+
+.characters__image {
+    width: 100%;
+}
+
+.characters__info {
+    padding: 8%;
+}
+
+.characters__attribute {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .characters__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .characters__itemContainer {
+        margin-right: 50px;
+        width: calc((100% - 50px) / 2);
+    }
+}

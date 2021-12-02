@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!------------------------------------------------- 
 Author: Destiny Lewis
 Course: DGL-123, Introduction to PHP
 Section: DLU-1
@@ -7,7 +7,7 @@ Date: December 2nd 2021
 Final Course Project
 
 simpsons_archive.php 
--->
+------------------------------------------------->
 
 <html lang="en">
 <head>
@@ -20,8 +20,8 @@ simpsons_archive.php
 <body>
     
     <header id="masthead" class="site-header layout-container">
-        <a href="/">
-            <img class="site-header__logo" src="images/logo.svg" alt="Logo">
+        <a href="simpsons_archive.php">
+            <img class="site-header__logo" src="images/logo.svg" alt="Logo"> <!-- Should refresh page on-click -->
         </a>
     </header>
 
@@ -106,7 +106,7 @@ simpsons_archive.php
                                 <div class="characters__item">
                                     <img src="images/marge.png" alt="marge" class="characters__image">
                                     <div class="characters__info">
-                                        
+
                                         <h3 class="characters__name">
                                             Marge Simpson
                                         </h3>
