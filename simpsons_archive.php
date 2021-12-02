@@ -113,7 +113,17 @@ simpsons_archive.php
                             }
                             // convert php array into JSON string
                             $jsonChar = json_encode($charsArray);
-                            echo $jsonChar;
+                            $notJson = json_decode($jsonChar, true);
+                            // var_dump($notJson);
+
+
+                            echo $notJson[0]["Name"]; // outputs "Homer Simpson"
+                            echo $notJson[1]["Name"]; // outputs "Marge Simpson"
+                            echo $notJson[2]["Name"]; // outputs "Bart Simpson"
+                            echo $notJson[3]["Name"]; // outputs "Lisa Simpson"
+                            echo $notJson[4]["Name"]; // outputs "Maggie Simpson"
+                            echo $notJson[5]["Name"]; // outputs "Moe Szyslak"
+
                         } else {
                             print "<p>Could not fetch data</p>";
                         }
