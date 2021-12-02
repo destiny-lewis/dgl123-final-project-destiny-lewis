@@ -99,6 +99,15 @@ simpsons_archive.php
                     </div>
                 </div>
 
+                <?php 
+                    if ($dbconnect = mysqli_connect('localhost', 'root', '', 'simpsons_characters')) {
+                        // connection successful
+                    } else {
+                        // connection unsuccessful
+                        die("Error " . mysqli_error($dbconnect));
+                    }
+                ?>
+
                 <div class="characters__container layout-container">
                     <div class="characters__row layout-row">
                         <ul class="characters__items">
@@ -134,7 +143,6 @@ simpsons_archive.php
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
