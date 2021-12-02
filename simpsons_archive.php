@@ -111,6 +111,9 @@ simpsons_archive.php
                             while ($row = mysqli_fetch_assoc($fetchResult)) {
                                 $charsArray[] = $row;
                             }
+                            // convert php array into JSON string
+                            $jsonChar = json_encode($charsArray);
+                            echo $jsonChar;
                         } else {
                             print "<p>Could not fetch data</p>";
                         }
