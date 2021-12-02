@@ -102,6 +102,18 @@ simpsons_archive.php
                 <?php 
                     if ($dbconnect = mysqli_connect('localhost', 'root', '', 'simpsons_characters')) {
                         // connection successful
+                        // fetch required table data
+                        $sqlFetch = "SELECT * FROM characters";
+                        if ($fetchResult = mysqli_query($dbconnect, $sqlFetch)) {
+                            // fetch successful
+                            // convert data into array
+                            $charsArray = array();
+                            while ($row = mysqli_fetch_assoc($fetchResult)) {
+                                $charsArray[] = $row;
+                            }
+                        } else {
+                            print "<p>Could not fetch data</p>";
+                        }
                     } else {
                         // connection unsuccessful
                         die("Error " . mysqli_error($dbconnect));
