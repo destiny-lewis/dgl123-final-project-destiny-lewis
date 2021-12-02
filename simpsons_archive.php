@@ -43,53 +43,53 @@ simpsons_archive.php
                                     Select characters to show
                                 </h3>
 
-                                <form method="get">
+                                <form method="get" action="">
 
                                     <ul class="form__items">
                                         <li class="form__item">
                                             <label for="homer">
                                                 Homer Simpson
                                             </label>
-                                            <input id="homer" type="checkbox" name="homer">                                
+                                            <input id="homer" type="checkbox" name='characters[]' value="homer">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="marge">
                                                 Marge Simpson                                                
                                             </label>
-                                            <input id="marge" type="checkbox" name="marge" checked>                                
+                                            <input id="marge" type="checkbox" name='characters[]' value="marge">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="bart">
                                                 Bart Simpson                                                
                                             </label>
-                                            <input id="bart" type="checkbox" name="bart">                                
+                                            <input id="bart" type="checkbox" name='characters[]' value="bart">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="lisa">
                                                 Lisa Simpson                                                
                                             </label>
-                                            <input id="lisa" type="checkbox" name="lisa">        
+                                            <input id="lisa" type="checkbox" name='characters[]' value="lisa">        
                                         </li>
 
                                         <li class="form__item">
                                             <label for="maggie">
                                                 Maggie Simpson                                                
                                             </label>
-                                            <input id="maggie" type="checkbox" name="maggie">                                
+                                            <input id="maggie" type="checkbox" name='characters[]' value="maggie">                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="moe">
                                                 Moe Szyslak                                                
                                             </label>
-                                            <input id="moe" type="checkbox" name="moe">                                
+                                            <input id="moe" type="checkbox" name='characters[]' value="moe">                                
                                         </li>
                                     </ul>
 
-                                    <input class="form__button" type="submit" value="Show Characters">
+                                    <input class="form__button" type="submit" name="submit" value="Show Characters">
 
                                 </form>
 
@@ -100,6 +100,9 @@ simpsons_archive.php
                 </div>
 
                 <?php 
+
+                //---------- Retrieve Data from Database
+
                     if ($dbconnect = mysqli_connect('localhost', 'root', '', 'simpsons_characters')) {
                         // connection successful
                         // fetch required table data
@@ -115,14 +118,12 @@ simpsons_archive.php
                             $jsonChar = json_encode($charsArray);
                             $charData = json_decode($jsonChar, true);
                             // var_dump($charData);
-
-
-                            echo $charData[0]["Name"]; 
-                            echo $charData[0]["Image"];
-                            echo $charData[0]["Age"]; 
-                            echo $charData[0]["Occupation"]; 
-                            echo $charData[0]["VoiceActor"]; 
-                            echo $charData[0]["ID"];
+                            // echo $charData[0]["Name"]; 
+                            // echo $charData[0]["Image"];
+                            // echo $charData[0]["Age"]; 
+                            // echo $charData[0]["Occupation"]; 
+                            // echo $charData[0]["VoiceActor"]; 
+                            // echo $charData[0]["ID"];
 
                         } else {
                             print "<p>Could not fetch data</p>";
@@ -131,6 +132,19 @@ simpsons_archive.php
                         // connection unsuccessful
                         die("Error " . mysqli_error($dbconnect));
                     }
+
+                    //---------- Form Handling
+                    if (isset($_GET['characters'])) {
+                        $characters = $_GET['characters'];
+                        var_dump($characters);
+                        echo "These characters were selected:<br/>";
+                        foreach ($characters as $char => $value) {
+                            echo "$value<br/>";
+                        }
+                    } else {
+                        echo "Please select a character";
+                    }
+
                 ?>
 
                 <div class="characters__container layout-container">
