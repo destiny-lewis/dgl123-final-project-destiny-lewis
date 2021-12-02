@@ -25,16 +25,13 @@
     if (isset($_GET['characters'])) {
         $characters = $_GET['characters'];
         $charData = json_decode($jsonChar, true);
-
-        for ($j = 0; $j < count($characters); $j++) {
-            var_dump($characters[$j]);
-        }
-
-        for ($i = 0; $i < count($charData); $i++){
-            foreach ($charData[$i] as $data => $value) {
-                echo "$value<br/>";
+        for ($i = 0; $i < count($charData); $i++) {
+            if (in_array($charData[$i]["Name"], $characters)) {
+                var_dump($charData[$i]["Name"]);
             }
         }
+
+        
         
     } else {
         echo "Please select a character";
