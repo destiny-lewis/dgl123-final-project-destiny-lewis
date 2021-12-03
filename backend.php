@@ -40,7 +40,12 @@ data retrieved from characters.json
                                                             
                         <div class="characters__voicedBy characters__attribute">
                             <b>Voiced by:</b> <?=$charData[$i]['VoiceActor']?>                                                    
-                        </div>                                                    
+                        </div>
+                        
+                        <div class="characters__soundClip characters__attribute" id="audioParent">
+                            <input type="button" value="Play Sound Clip" class="playbtn" id="<?=$charData[$i]['ID']?>">
+                            <audio src="audio/<?=$charData[$i]['Soundclip']?>" class="audio" id="audio_<?=$charData[$i]['ID']?>"> 
+                        </div>
                                                             
                     </div>
 

@@ -5,6 +5,7 @@
         "Age":"40",
         "Occupation":"Nuclear Safety Inspector",
         "VoiceActor":"Dan Castellaneta",
+        "Soundclip":"homer.mp3",
         "ID":"1"
     },
     {
@@ -13,6 +14,7 @@
         "Age":"40",
         "Occupation":"Housewife",
         "VoiceActor":"Julie Kavner",
+        "Soundclip":"marge.mp3",
         "ID":"2"
     },
     {
@@ -21,6 +23,7 @@
         "Age":"10",
         "Occupation":"Student",
         "VoiceActor":"Nancy Cartwright",
+        "Soundclip":"bart.mp3",
         "ID":"3"
     },
     {
@@ -29,6 +32,7 @@
         "Age":"8",
         "Occupation":"Student",
         "VoiceActor":"Yeardley Smith",
+        "Soundclip":"lisa.mp3",
         "ID":"4"
     },
     {
@@ -37,6 +41,7 @@
         "Age":"8",
         "Occupation":"Baby",
         "VoiceActor":"Nancy Cartwright",
+        "Soundclip":"maggie.mp3",
         "ID":"5"
     },
     {
@@ -45,6 +50,7 @@
         "Age":"55",
         "Occupation":"Bartender",
         "VoiceActor":"Hank Azaria",
+        "Soundclip":"moe.mp3",
         "ID":"6"
     }
 ]

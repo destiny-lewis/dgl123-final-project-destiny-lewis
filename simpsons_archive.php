@@ -109,6 +109,8 @@ simpsons_archive.php
             </div>
         </div>
     </div>
+<script> 
+</script>
 
 </body>
 </html>
