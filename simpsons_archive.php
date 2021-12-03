@@ -110,7 +110,9 @@ simpsons_archive.php
         </div>
     </div>
 <script>
-    let soundClips = document.querySelectorAll(".audio").forEach()
+    let soundClips = document.querySelectorAll(".audio").forEach((sound) =>{
+        sound.volume = 0.2;
+    })
 
 </script>
 
