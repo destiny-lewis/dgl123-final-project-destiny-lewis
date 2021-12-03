@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!------------------------------------------------- 
-Author: Destiny Lewis
+Author: Chris Geelhoed
+Modified by: Destiny Lewis
 Course: DGL-123, Introduction to PHP
 Section: DLU-1
 Date: December 2nd 2021
@@ -20,7 +21,7 @@ simpsons_archive.php
     
     <header id="masthead" class="site-header layout-container">
         <a href="simpsons_archive.php">
-            <img class="site-header__logo" src="images/logo.svg" alt="Logo"> <!-- Should refresh page on-click -->
+            <img class="site-header__logo" src="images/logo.svg" alt="Logo">
         </a>
     </header>
 
@@ -88,7 +89,7 @@ simpsons_archive.php
                                         </li>
                                     </ul>
 
-                                    <input class="form__button" type="submit" name="submit" value="Show Characters">
+                                    <input class="form__button" type="submit" value="Show Characters">
 
                                 </form>
 

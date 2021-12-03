@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /******************************************* 
 Author: Destiny Lewis
 Course: DGL-123, Introduction to PHP
@@ -12,16 +13,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    display: block;
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
-.site-header {
-    margin-bottom: 50px;
-}
-
-.site-header__logo {
-    width: 140px;
+h3:first-child {
+    margin-top: 0px;
 }
 
 .layout-container {
@@ -36,14 +35,22 @@ header {
     margin-right: auto;
 }
 
-.form__itemsContainer {
-    box-shadow: 2px 4px rgb(0 0 0 / 10%);
+.site-header__logo {
+    width: 140px;
+}
+
+.site-header {
     margin-bottom: 50px;
 }
 
 .form__image {
     display: block;
     width: 100%;
+}
+
+.form__itemsContainer {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    margin-bottom: 50px;
 }
 
 .form__card {
@@ -58,14 +65,8 @@ header {
     margin-top: 0.5rem;
 }
 
-ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
-
 .characters__itemContainer {
-    box-shadow: 2px 4px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     margin-bottom: 50px;
 }
 
@@ -90,5 +91,9 @@ ul {
     .characters__itemContainer {
         margin-right: 50px;
         width: calc((100% - 50px) / 2);
+    }
+
+    .characters__itemContainer:nth-child(even) {
+        margin-right: 0px;
     }
 }
