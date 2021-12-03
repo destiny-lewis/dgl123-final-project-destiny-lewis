@@ -42,9 +42,11 @@ data retrieved from characters.json
                             <b>Voiced by:</b> <?=$charData[$i]['VoiceActor']?>                                                    
                         </div>
                         
-                        <div class="characters__soundClip characters__attribute" id="audioParent">
-                            <input type="button" value="Play Sound Clip" class="playbtn" id="<?=$charData[$i]['ID']?>">
-                            <audio src="audio/<?=$charData[$i]['Soundclip']?>" class="audio" id="audio_<?=$charData[$i]['ID']?>"> 
+                        <div class="characters__soundClip characters__attribute">
+                            <audio controls class="audio">
+                                <source src="audio/<?=$charData[$i]['Soundclip']?>" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
                         </div>
                                                             
                     </div>

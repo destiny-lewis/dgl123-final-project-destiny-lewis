@@ -82,6 +82,13 @@ h3:first-child {
     margin-bottom: 0.5rem;
 }
 
+audio {
+    padding-top: 0.5rem;
+    width: 250px;
+    position: relative;
+    right: 10px;
+}
+
 @media screen and (min-width: 700px) {
     .characters__items {
         display: flex;
