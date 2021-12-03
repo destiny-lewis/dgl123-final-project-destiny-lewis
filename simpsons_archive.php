@@ -110,10 +110,10 @@ simpsons_archive.php
         </div>
     </div>
 <script>
+    "use strict";
     let soundClips = document.querySelectorAll(".audio").forEach((sound) =>{
         sound.volume = 0.2;
-    })
-
+    });
 </script>
 
 </body>
