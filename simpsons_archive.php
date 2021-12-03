@@ -50,42 +50,42 @@ simpsons_archive.php
                                             <label for="homer">
                                                 Homer Simpson
                                             </label>
-                                            <input id="homer" type="checkbox" name='characters[]' value="Homer Simpson">                                
+                                            <input id="homer" type="checkbox" name='characters[]' value="Homer Simpson"<?php if(isset($_GET['characters'])) { if (in_array("Homer Simpson", $_GET['characters'])) { echo "checked='checked'"; } }?>>                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="marge">
                                                 Marge Simpson                                                
                                             </label>
-                                            <input id="marge" type="checkbox" name='characters[]' value="Marge Simpson">                                
+                                            <input id="marge" type="checkbox" name='characters[]' value="Marge Simpson" <?php if(isset($_GET['characters'])) { if (in_array("Marge Simpson", $_GET['characters'])) { echo "checked='checked'"; } }?>>                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="bart">
                                                 Bart Simpson                                                
                                             </label>
-                                            <input id="bart" type="checkbox" name='characters[]' value="Bart Simpson">                                
+                                            <input id="bart" type="checkbox" name='characters[]' value="Bart Simpson" <?php if(isset($_GET['characters'])) { if (in_array("Bart Simpson", $_GET['characters'])) { echo "checked='checked'"; } }?>>                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="lisa">
                                                 Lisa Simpson                                                
                                             </label>
-                                            <input id="lisa" type="checkbox" name='characters[]' value="Lisa Simpson">        
+                                            <input id="lisa" type="checkbox" name='characters[]' value="Lisa Simpson" <?php if(isset($_GET['characters'])) { if (in_array("Lisa Simpson", $_GET['characters'])) { echo "checked='checked'"; } }?>>        
                                         </li>
 
                                         <li class="form__item">
                                             <label for="maggie">
                                                 Maggie Simpson                                                
                                             </label>
-                                            <input id="maggie" type="checkbox" name='characters[]' value="Maggie Simpson">                                
+                                            <input id="maggie" type="checkbox" name='characters[]' value="Maggie Simpson" <?php if(isset($_GET['characters'])) { if (in_array("Maggie Simpson", $_GET['characters'])) { echo "checked='checked'"; } }?>>                                
                                         </li>
 
                                         <li class="form__item">
                                             <label for="moe">
                                                 Moe Szyslak                                                
                                             </label>
-                                            <input id="moe" type="checkbox" name='characters[]' value="Moe Szyslak">                                
+                                            <input id="moe" type="checkbox" name='characters[]' value="Moe Szyslak" <?php if(isset($_GET['characters'])) { if (in_array("Moe Szyslak", $_GET['characters'])) { echo "checked='checked'"; } }?>>                                
                                         </li>
                                     </ul>
 
