@@ -1,0 +1,50 @@
+[
+    {
+        "Name":"Homer Simpson",
+        "Image":"homer.png",
+        "Age":"40",
+        "Occupation":"Nuclear Safety Inspector",
+        "VoiceActor":"Dan Castellaneta",
+        "ID":"1"
+    },
+    {
+        "Name":"Marge Simpson",
+        "Image":"marge.png",
+        "Age":"40",
+        "Occupation":"Housewife",
+        "VoiceActor":"Julie Kavner",
+        "ID":"2"
+    },
+    {
+        "Name":"Bart Simpson",
+        "Image":"bart.png",
+        "Age":"10",
+        "Occupation":"Student",
+        "VoiceActor":"Nancy Cartwright",
+        "ID":"3"
+    },
+    {
+        "Name":"Lisa Simpson",
+        "Image":"lisa.png",
+        "Age":"8",
+        "Occupation":"Student",
+        "VoiceActor":"Yeardley Smith",
+        "ID":"4"
+    },
+    {
+        "Name":"Maggie Simpson",
+        "Image":"maggie.png",
+        "Age":"8",
+        "Occupation":"Baby",
+        "VoiceActor":"Nancy Cartwright",
+        "ID":"5"
+    },
+    {
+        "Name":"Moe Szyslak",
+        "Image":"moe.png",
+        "Age":"55",
+        "Occupation":"Bartender",
+        "VoiceActor":"Hank Azaria",
+        "ID":"6"
+    }
+]
