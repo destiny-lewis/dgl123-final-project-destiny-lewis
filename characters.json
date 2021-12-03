@@ -6,6 +6,7 @@
         "Occupation":"Nuclear Safety Inspector",
         "VoiceActor":"Dan Castellaneta",
         "Soundclip":"homer.mp3",
+        "AudioSource":"https://www.thesoundarchive.com/simpsons.asp",
         "ID":"1"
     },
     {
@@ -15,6 +16,7 @@
         "Occupation":"Housewife",
         "VoiceActor":"Julie Kavner",
         "Soundclip":"marge.mp3",
+        "AudioSource":"http://soundfxcenter.com/sound_effect/search.php?sfx=Simpsons",
         "ID":"2"
     },
     {
@@ -24,6 +26,7 @@
         "Occupation":"Student",
         "VoiceActor":"Nancy Cartwright",
         "Soundclip":"bart.mp3",
+        "AudioSource":"https://www.thesoundarchive.com/simpsons.asp",
         "ID":"3"
     },
     {
@@ -33,6 +36,7 @@
         "Occupation":"Student",
         "VoiceActor":"Yeardley Smith",
         "Soundclip":"lisa.mp3",
+        "AudioSource":"https://www.findsounds.com/ISAPI/search.dll?keywords=Simpsons",
         "ID":"4"
     },
     {
@@ -42,6 +46,7 @@
         "Occupation":"Baby",
         "VoiceActor":"Nancy Cartwright",
         "Soundclip":"maggie.mp3",
+        "AudioSource":"http://soundfxcenter.com/sound_effect/search.php?sfx=Simpsons",
         "ID":"5"
     },
     {
@@ -51,6 +56,7 @@
         "Occupation":"Bartender",
         "VoiceActor":"Hank Azaria",
         "Soundclip":"moe.mp3",
+        "AudioSource":"http://soundfxcenter.com/sound_effect/search.php?sfx=Simpsons",
         "ID":"6"
     }
 ]
