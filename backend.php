@@ -1,34 +1,26 @@
-<?php
+<!------------------------------------------------- 
+Author: Destiny Lewis
+Course: DGL-123, Introduction to PHP
+Section: DLU-1
+Date: December 2nd 2021
+Final Course Project
 
-    // Connect to database & collect data.
-    if ($dbconnect = mysqli_connect('localhost', 'root', '', 'simpsons_characters')) {
-        // connection successful
-        // fetch required table data
-        $sqlFetch = "SELECT * FROM characters";
-        if ($fetchResult = mysqli_query($dbconnect, $sqlFetch)) {
-            // fetch successful
-            // convert data into array
-            $charsArray = array();
-            while ($row = mysqli_fetch_assoc($fetchResult)) {
-                $charsArray[] = $row;
-            }
-            // convert php array into JSON string
-            $jsonChar = json_encode($charsArray);
-            $charData = json_decode($jsonChar, true);
-            
-        } else {
-            print "<p>Could not fetch data</p>";
-        }
-    } else {
-        // connection unsuccessful
-        die("Error " . mysqli_error($dbconnect));
-    }     
-    
+backend.php
+Purpose: Display information about varying Simpson's characters based on user selection using
+data retrieved from characters.json
+------------------------------------------------->
+
+<?php    
+    if (file_exists("characters.json")) {
+        $jsonChar = file_get_contents("characters.json");
+        $charData = json_decode($jsonChar, true);
+    }
 ?>
 
 <?php if (isset($_GET['characters'])) : ?>
+    <?php $characters = $_GET['characters']; ?>
     <?php for ($i = 0; $i < count($charData); $i++) : ?>
-        <?php if (in_array($charData[$i]['Name'], $_GET['characters'])) : ?>
+        <?php if (in_array($charData[$i]['Name'], $characters)) : ?>
             <li class="characters__itemContainer">
                 <div class="characters__item">
                     <img src="images/<?=$charData[$i]['Image']?>" alt="<?=$charData[$i]['Name']?>" class="characters__image">
