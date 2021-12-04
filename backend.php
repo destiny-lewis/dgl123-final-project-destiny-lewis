@@ -10,6 +10,7 @@ Purpose: Display information about varying Simpson's characters based on user se
 data retrieved from characters.json
 ------------------------------------------------->
 
+
 <?php    
     if (file_exists("characters.json")) {
         $jsonChar = file_get_contents("characters.json");
