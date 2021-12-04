@@ -47,7 +47,7 @@ data retrieved from characters.json
                                 <source src="audio/<?=$charData[$i]['Soundclip']?>" type="audio/mp3">
                                 Your browser does not support the audio tag.
                             </audio>
-                            <a href="<?=$charData[$i]['AudioSource']?>" class="sourceLink">Audio Source</a>
+                            <a href="<?=$charData[$i]['AudioSource']?>" target="_blank" class="sourceLink">Audio Source</a>
                         </div>
                                                             
                     </div>
