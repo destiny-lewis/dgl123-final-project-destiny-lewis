@@ -15,7 +15,7 @@ data retrieved from characters.json
     if (file_exists("characters.json")) {
         $jsonChar = file_get_contents("characters.json");
         $charData = json_decode($jsonChar, true);
-    }
+    } 
 ?>
 
 <?php if (isset($_GET['characters'])) : ?>
